@@ -1,5 +1,6 @@
-# WEEK3
+
 📘 Laporan Praktikum PWL-POS (Jobsheet 03)
+<<<<<<< HEAD
 🧱 Praktikum 2.1 — Migrasi Tanpa Relasi
 
 Dibuat file migrasi untuk tabel m_level:
@@ -23,9 +24,11 @@ php artisan migrate
 Dengan cara serupa, dibuat juga tabel m_kategori dan m_supplier.
 Hasil: Ketiga tabel berhasil dibuat di database.
 
+<<<<<<< HEAD
 
 
 🔗 Praktikum 2.2 — Migrasi Dengan Relasi
+
 
 Buat migrasi untuk tabel m_user:
 
@@ -46,6 +49,7 @@ t_stok → relasi ke m_barang & m_user
 t_penjualan_detail → relasi ke t_penjualan & m_barang
 Hasil: Semua tabel dan hubungan antar tabel berhasil terbentuk.
 
+<<<<<<< HEAD
 ![prak2.1](ss/prak2.1.png)
 
 🌱 Praktikum 3 — Seeder
@@ -71,11 +75,11 @@ t_penjualan	10	10 transaksi
 t_penjualan_detail	30	3 item per transaksi
 
 Hasil: Semua seeder berhasil dijalankan.
+<<<<<<< HEAD
 ![prak3](ss/prak3awal.png)
 ![prak3.2](ss/prak3tengah.png)
 ![prak3.3](ss/prak3akhir.png)
 
-]
 💻 Praktikum 4 — DB Facade
 
 Buat controller LevelController.
@@ -97,6 +101,7 @@ Select data
 Ditampilkan juga data di view level.blade.php.
 Hasil: Semua operasi database (insert, update, delete, select) berhasil.
 
+<<<<<<< HEAD
 ![prak4](ss/prak4.png)
 
 🧠 Praktikum 5 — Query Builder
@@ -114,6 +119,7 @@ Delete
 Tampilkan hasilnya di view kategori.blade.php.
 Hasil: Query Builder berhasil memanipulasi data dan menampilkan hasilnya.
 
+<<<<<<< HEAD
 ![prak5](ss/prak5.png)
 🚀 Praktikum 6 — Eloquent ORM
 
@@ -133,5 +139,7 @@ Menemukan user berdasarkan ID atau kondisi tertentu
 
 Tampilkan data di view user.blade.php.
 Hasil: Insert, update, dan tampilkan data berhasil melalui Eloquent ORM
+<<<<<<< HEAD
 
 ![prak6](ss/prak6.png)
+
