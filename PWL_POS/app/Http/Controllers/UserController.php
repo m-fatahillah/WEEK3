@@ -10,7 +10,8 @@ class UserController extends Controller
 {
     public function index()
     {
-        $user = UserModel::where('username', 'manager9')->firstOrFail(); // [cite: 203]
-        return view('user', ['data' => $user]);
+        $user = UserModel::where('level_id', 2)->count(); // 
+        //dd($user); // 
+        return view('user', ['data' => $user]); // 
     }
 }
