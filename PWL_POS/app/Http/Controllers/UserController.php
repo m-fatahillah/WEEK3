@@ -12,11 +12,16 @@ class UserController extends Controller
 {
     $user = UserModel::firstOrNew(
         [
-            'username' => 'manager',
-            'nama' => 'Manager',
+            'username' => 'manager34',
+            'nama' => 'Manager Tiga Tiga',
+            'password' => Hash::make('12345'),
+            'level_id' => 2
         ],
     );
+    
+    $user->save(); // Menyimpan data ke database
 
     return view('user', ['data' => $user]);
 }
+
 }
