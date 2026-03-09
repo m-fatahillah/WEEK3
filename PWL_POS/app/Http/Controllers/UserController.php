@@ -10,18 +10,22 @@ class UserController extends Controller
 {
     public function index()
 {
-    $user = UserModel::firstOrNew(
-        [
-            'username' => 'manager34',
-            'nama' => 'Manager Tiga Tiga',
-            'password' => Hash::make('12345'),
-            'level_id' => 2
-        ],
-    );
-    
-    $user->save(); // Menyimpan data ke database
+    $user = UserModel::create([
+        'username' => 'manager11',
+        'nama' => 'Manager11',
+        'password' => Hash::make('12345'),
+        'level_id' => 2,
+    ]); // [cite: 408, 409]
 
-    return view('user', ['data' => $user]);
+    $user->username = 'manager12'; // [cite: 410]
+
+    $user->save(); // [cite: 411]
+
+    $user->wasChanged(); // true [cite: 412]
+    $user->wasChanged('username'); // true [cite: 413]
+    $user->wasChanged(['username', 'level_id']); // true [cite: 414]
+    $user->wasChanged('nama'); // false [cite: 415]
+    dd($user->wasChanged(['nama', 'username'])); // true 
 }
 
 }
