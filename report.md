@@ -1,0 +1,1 @@
+![test](ss/prak2.1.png)
